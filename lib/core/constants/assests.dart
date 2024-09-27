@@ -1,0 +1,3 @@
+class Asseets {
+  Asseets._();
+}
