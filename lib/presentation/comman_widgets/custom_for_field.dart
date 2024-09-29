@@ -3,7 +3,7 @@ part of 'comman_widgets_import.dart';
 class CustomFormField extends StatelessWidget {
   final String hintText;
   final IconData? icon;
-  final String labelText;
+  final String? labelText;
   final bool hide;
   final Widget? suffixIcon;
   final FormFieldValidator<String>? validator;
@@ -12,7 +12,7 @@ class CustomFormField extends StatelessWidget {
     super.key,
     required this.hintText,
     this.icon,
-    required this.labelText,
+     this.labelText,
     required this.hide,
     this.suffixIcon,
     this.validator,

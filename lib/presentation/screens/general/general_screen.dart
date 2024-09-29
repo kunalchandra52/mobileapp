@@ -22,7 +22,7 @@ class _GeneralScreenState extends State<GeneralScreen> {
   List<Widget> pages = [
     const HomeScreen(),
     const CategoriesScreen(),
-    const AddPostScreen(),
+     AddPostScreen(),
     const TagsScreen(),
     const ProfileScreen(),
   ];

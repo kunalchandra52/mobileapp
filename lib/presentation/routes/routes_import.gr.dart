@@ -34,10 +34,13 @@ import 'package:memeapp/presentation/screens/splash/splash_imports.dart'
 
 /// generated route for
 /// [_i1.AddPostScreen]
-class AddPostScreenRoute extends _i12.PageRouteInfo<void> {
-  const AddPostScreenRoute({List<_i12.PageRouteInfo>? children})
-      : super(
+class AddPostScreenRoute extends _i12.PageRouteInfo<AddPostScreenRouteArgs> {
+  AddPostScreenRoute({
+    _i13.Key? key,
+    List<_i12.PageRouteInfo>? children,
+  }) : super(
           AddPostScreenRoute.name,
+          args: AddPostScreenRouteArgs(key: key),
           initialChildren: children,
         );
 
@@ -46,9 +49,22 @@ class AddPostScreenRoute extends _i12.PageRouteInfo<void> {
   static _i12.PageInfo page = _i12.PageInfo(
     name,
     builder: (data) {
-      return const _i1.AddPostScreen();
+      final args = data.argsAs<AddPostScreenRouteArgs>(
+          orElse: () => const AddPostScreenRouteArgs());
+      return _i1.AddPostScreen(key: args.key);
     },
   );
+}
+
+class AddPostScreenRouteArgs {
+  const AddPostScreenRouteArgs({this.key});
+
+  final _i13.Key? key;
+
+  @override
+  String toString() {
+    return 'AddPostScreenRouteArgs{key: $key}';
+  }
 }
 
 /// generated route for
